@@ -12,7 +12,7 @@
                     <li class="breadcrumb-item">
                        Gender</li>
                     <li><i class='bx bx-chevron-right'></i></li>
-                    <li class="breadcrumb-item">Male</li>
+                    <li class="breadcrumb-item"></li>
                 </ol>
             </div>
         </div>
@@ -25,21 +25,21 @@
         <div class="col-lg-4">
             <div class="card shadow-sm">
               <div class="card-header bg-transparent text-center">
-                <img class="profile_img" src="assets/images/user-3.jpg" alt="student dp">
-                <h3>Ankit Kumar</h3>
+                <img class="profile_img" src="{{imageurls}}{{user.image}}" alt="student dp">
+                <h3>{{user.name}}</h3>
               </div>
               <div class="card-body">
-                <p class="mb-0"><strong class="pr-1">User ID:</strong>321000001</p>
-                <p class="mb-0"><strong class="pr-1">Matrimony ID:</strong>12929292</p>
-                <p class="mb-0"><strong class="pr-1">Active Plan:</strong>Null</p>
-                <p class="mb-0"><strong class="pr-1">Taken Plan:</strong>Null</p>
-                <p class="mb-0"><strong class="pr-1">Total Access:</strong>Null</p>
+                <p class="mb-0"><strong class="pr-1">User ID:</strong>{{user.userid}}</p>
+                <p class="mb-0"><strong class="pr-1">Matrimony ID:</strong>{{user.matrimony_id}}</p>
+                <p class="mb-0"><strong class="pr-1">Active Plan:</strong>{{user.active_plan}}</p>
+                <p class="mb-0"><strong class="pr-1">Taken Plan:</strong>{{user.taken_plan}}</p>
+                <p class="mb-0"><strong class="pr-1">Total Access:</strong>{{user.total_access}}</p>
 
-                <p class="mb-0"><strong class="pr-1">Update Plan Date:</strong>Null</p>
-                <p class="mb-0"><strong class="pr-1">Created Date:</strong>20-04-2021</p>
+                <p class="mb-0"><strong class="pr-1">Update Plan Date:</strong>{{user.update_plan_date}}</p>
+                <p class="mb-0"><strong class="pr-1">Created Date:</strong>{{user.created_date }}</p>
 
-                
-                
+
+
 
 
               </div>
@@ -55,7 +55,7 @@
                 <tr>
                   <th width="30%">Name</th>
                   <td width="2%">:</td>
-                  <td>Ankit Kumar</td>
+                  <td>{{user.name}}</td>
                 </tr>
                 <tr>
                   <th width="30%">Connect Status</th>
@@ -65,202 +65,200 @@
                 <tr>
                   <th width="30%">Gender</th>
                   <td width="2%">:</td>
-                  <td>Male</td>
+                  <td>{{user.gender}}</td>
                 </tr>
                 <tr>
                   <th width="30%">Email</th>
                   <td width="2%">:</td>
-                  <td>user@gmail.com</td>
+                  <td>{{user.email}}</td>
                 </tr>
                 <tr>
                   <th width="30%">Date of Birth</th>
                   <td width="2%">:</td>
-                  <td>26</td>
+                  <td>{{user.dateofbirth}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Height</th>
                     <td width="2%">:</td>
-                    <td>5.6feet</td>
+                    <td>{{user.height}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Physical Status</th>
                     <td width="2%">:</td>
-                    <td>nice</td>
+                    <td>{{user.physical_status}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Weight</th>
                     <td width="2%">:</td>
-                    <td>50</td>
+                    <td>{{user.weight}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Marital Status</th>
                     <td width="2%">:</td>
-                    <td>single</td>
+                    <td>{{user.marital_status}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Mother Tongue</th>
                     <td width="2%">:</td>
-                    <td>Hindi</td>
+                    <td>{{user.mother_tongue}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Diet Preference</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.diet_preference}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Drinking Habbit</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.drinking_habbit}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Smoking Habbit</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.smoking_habbit}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Gotram</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.gotram}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Star</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.start}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Rashi</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.rashi}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Caste</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.caste}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Sub Caste</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.sub_caste}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Religion</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.religion}}</td>
                 </tr>
                 <tr>
                     <th width="30%">City</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.city}}</td>
                 </tr>
                 <tr>
                     <th width="30%">State</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.state}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Country</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.country}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Occupation</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.occupation}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Annual Income</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.annual_income}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Job Sector</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.job_sector}}</td>
                 </tr>
                 <tr>
                     <th width="30%">College</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.college}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Organisation</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.orgnisation}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Qualification</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.qualification}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Total Family Members</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.total_family_members}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Father Details</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.father_details}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Mother Details</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.mother_details}}</td>
                 </tr>
-                <tr>
-                    <th width="30%">Unmarried Brother</th>
-                    <td width="2%">:</td>
-                    <td></td>
-                </tr>
+
                 <tr>
                     <th width="30%">Married Brother</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.married_brother}}</td>
                 </tr>
+                <tr>
+                  <th width="30%">Married Sister</th>
+                  <td width="2%">:</td>
+                  <td>{{user.married_sister}}</td>
+              </tr>
+              <tr>
+                <th width="30%">Unmarried Brother</th>
+                <td width="2%">:</td>
+                <td>{{user.unmarried_brother}}</td>
+              </tr>
                 <tr>
                     <th width="30%">Unarried Sister</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.unmarried_sister}}</td>
                 </tr>
-                <tr>
-                    <th width="30%">Married Sister</th>
-                    <td width="2%">:</td>
-                    <td></td>
-                </tr>
+
                 <tr>
                     <th width="30%">Profile Created By</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.profile_created_by}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Family Type</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.family_type}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Family Status</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.family_status}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Family Value</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.family_value}}</td>
                 </tr>
-                <tr>
-                    <th width="30%">Few words myself</th>
-                    <td width="2%">:</td>
-                    <td></td>
-                </tr>
+
                 <tr>
                     <th width="30%">Status</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.status}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Block</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.block}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Basic Details</th>
@@ -287,20 +285,16 @@
                     <td width="2%">:</td>
                     <td></td>
                 </tr>
-                <tr>
-                    <th width="30%">Food Status</th>
-                    <td width="2%">:</td>
-                    <td></td>
-                </tr>
+
                 <tr>
                     <th width="30%">Smoke Status</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.smoking_habbit}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Drink Status</th>
                     <td width="2%">:</td>
-                    <td></td>
+                    <td>{{user.drinking_habbit}}</td>
                 </tr>
                 <tr>
                     <th width="30%">Phone Status</th>
@@ -312,8 +306,8 @@
                     <td width="2%">:</td>
                     <td></td>
                 </tr>
-               
-                
+
+
 
 
               </table>
@@ -325,11 +319,11 @@
               <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Other Information</h3>
             </div>
             <div class="card-body pt-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>{{user.Few_Words_MySelf}}</p>
             </div>
           </div>
         </div>
-       
+
       </div>
     </div>
   </div>

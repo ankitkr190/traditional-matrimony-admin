@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path:"male",component:MaleComponent},
   {path:"female",component:FemaleComponent},
-  {path:"view-profile",component:ViewProfileComponent}
+  {path:"view-profile/:id",component:ViewProfileComponent}
 
 
 ];

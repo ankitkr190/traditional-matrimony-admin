@@ -27,7 +27,7 @@
     <div class="col-xl-12">
         <div class="card m-b-30 m-t-30">
             <div class="card-body">
-                <h4 class="mt-0 header-title mb-4">250 Female Users</h4>
+                <h4 class="mt-0 header-title mb-4">{{femalelist.length}} Female Users</h4>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -39,22 +39,22 @@
                                 <th scope="col">Status</th>
                                 <th scope="col">Image</th>
                                 <th scope="col">Action</th>
-                                
+
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>Jassa</td>
+                            <tr *ngFor="let female of femalelist">
+                                <td>{{female.userid}}</td>
+                                <td>{{female.matrimony_id}}</td>
+                                <td>{{female.name}}</td>
                                 <td><span class="badge badge-success">Active</span></td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> 
+                                        <img src="{{imageurls}}{{female.image}}" alt="" class="thumb-md rounded-circle mr-2">
                                     </div>
                                 </td>
                                 <td>
-                                   <a href="" class="action-btn">
+                                   <a routerLink="/gender/view-profile/{{female.userid}}" class="action-btn">
                                     <i class='bx bx-show'></i>
                                    </a>
                                    <a href="" class="action-btn">
@@ -65,7 +65,7 @@
                                    </a>
                                 </td>
                             </tr>
-                        
+
                         </tbody>
                     </table>
                 </div>

@@ -7,9 +7,13 @@ import { SuperadminService } from 'src/app/superadmin.service';
 })
 export class FemaleComponent implements OnInit {
   femalelist:any[]=[];
-  constructor(private admin:SuperadminService) { }
+  imageurls:any;
+  constructor(private admin:SuperadminService) {
+    this.imageurls=admin.image_urls
+   }
 
   ngOnInit(): void {
+    this.list();
   }
 
   list(){

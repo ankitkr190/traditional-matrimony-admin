@@ -7,8 +7,11 @@ import { SuperadminService } from 'src/app/superadmin.service';
   styleUrls: ['./male.component.css']
 })
 export class MaleComponent implements OnInit {
-  malelist:any[]=[]
-  constructor(private admin:SuperadminService) { }
+  malelist:any[]=[];
+  imageurls:any;
+  constructor(private admin:SuperadminService) {
+    this.imageurls=admin.image_urls
+  }
 
   ngOnInit(): void {
     this.list();

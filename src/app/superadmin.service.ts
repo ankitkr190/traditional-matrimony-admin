@@ -15,4 +15,7 @@ export class SuperadminService {
   lits_of_profile(gender:any):Observable<any>{
     return this.http.get<any>(this.urls+"admin/profile"+"?gender="+gender,{"headers":this.headers})
   }
+  singleprofilefulldetails(userid:any):Observable<any>{
+    return this.http.get<any>(this.urls+"admin/profile"+"?user_id="+userid,{"headers":this.headers})
+  }
 }
