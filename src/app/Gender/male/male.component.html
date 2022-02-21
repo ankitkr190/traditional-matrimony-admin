@@ -2,7 +2,7 @@
     <div class="col-xl-12">
         <div class="card m-b-30 m-t-30">
             <div class="card-body">
-                <h4 class="mt-0 header-title mb-4">250 Male Users</h4>
+                <h4 class="mt-0 header-title mb-4">{{malelist.length}} Male Users</h4>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -14,29 +14,30 @@
                                 <th scope="col">Status</th>
                                 <th scope="col">Image</th>
                                 <th scope="col">Action</th>
-                                
+
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>Jassa</td>
+                            <tr  *ngFor="let male of malelist" >
+
+                                <td>{{male.userid}}</td>
+                                <td>{{male.matrimony_id}}</td>
+                                <td>{{male.name}}</td>
                                 <td><span class="badge badge-success">Delivered</span></td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> 
+                                        <img src="assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2">
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                       
+
 
 
                                     </div>
                                 </td>
                             </tr>
-                        
+
                         </tbody>
                     </table>
                 </div>

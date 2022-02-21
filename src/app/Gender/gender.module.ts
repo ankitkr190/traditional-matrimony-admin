@@ -2,7 +2,7 @@ import { FemaleComponent } from './female/female.component';
 import { MaleComponent } from './male/male.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { HttpClientModule } from '@angular/common/http';
 import { GenderRoutingModule } from './gender-routing.module';
 
 
@@ -13,7 +13,8 @@ import { GenderRoutingModule } from './gender-routing.module';
   ],
   imports: [
     CommonModule,
-    GenderRoutingModule
+    GenderRoutingModule,
+    HttpClientModule
   ]
 })
 export class GenderModule { }
