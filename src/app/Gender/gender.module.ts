@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { GenderRoutingModule } from './gender-routing.module';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 
 @NgModule({
   declarations: [
     MaleComponent,
-    FemaleComponent
+    FemaleComponent,
+    ViewProfileComponent
   ],
   imports: [
     CommonModule,

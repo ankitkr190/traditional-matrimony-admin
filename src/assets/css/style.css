@@ -137,11 +137,6 @@ strong {
 }
 
 .breadcrumb > li + li:before {
-  padding: 0 5px;
-  color: #7d7e87;
-  content: "\f105" !important;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 
 .blockquote {
@@ -2369,13 +2364,13 @@ label {
 
 .form-control {
   font-size: 13px;
-  background: #2e304a;
-  border: 1px solid #353957;
+  /* background: #2e304a; */
+  /* border: 1px solid #353957; */
   color: #a5a6ad;
 }
 
 .form-control:focus {
-  background: #2e304a;
+  /* background: #2e304a; */
   border: 1px solid #353957;
   -webkit-box-shadow: none;
   box-shadow: none;
