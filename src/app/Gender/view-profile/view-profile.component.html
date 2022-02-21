@@ -20,84 +20,75 @@
 </div>
 
 <div class="user-profile py-4">
+
     <div class="container">
-<<<<<<< HEAD
         <div class="row">
+            
             <div class="col-lg-4">
                 <div class="card">
-                <div class="bg-transparent text-center">
-                    <img class="profile_img" src="assets/images/user-3.jpg" alt="student dp">
-                    <h3>Ankit Kumar</h3>
+                <div class="card-header bg-transparent text-center">
+                    <img class="profile_img" src="{{imageurls}}{{user.image}}" alt="student dp">
+                    <h3>{{user.name}}</h3>
                   </div>
                   </div>
             </div>
-           
-           
-           
             <div class="col-lg-8">
                 <div class="card">
                 <div class="card-body">
+                  
+    
+    
+    
                     <table class="table table-bordered">
                         <tr>
-                          <th width="30%">User ID</th>
+                          <th width="40%">User ID</th>
                           <td width="2%">:</td>
-                          <td>321000001</td>
+                          <td>{{user.name}}</td>
                         </tr>
                         <tr>
-                            <th width="30%">Matrimony ID</th>
+                            <th width="40%"> Matrimony ID </th>
                             <td width="2%">:</td>
-                            <td>321000001</td>
-                        </tr>
-                        <tr>
-                            <th width="30%">Active Plan</th>
+                            <td>{{user.matrimony_id}}</td>
+                          </tr>
+                          <tr>
+                            <th width="40%">Active Plan </th>
                             <td width="2%">:</td>
-                            <td>lorem</td>
-                        </tr>
-                        <tr>
-                            <th width="30%">Taken Plan</th>
+                            <td>{{user.active_plan}}</td>
+                          </tr>
+                          <tr>
+                            <th width="40%">  Taken Plan </th>
                             <td width="2%">:</td>
-                            <td>ipsum</td>
-                        </tr>
-                        <tr>
-                            <th width="30%">Update Plan Date </th>
+                            <td>{{user.taken_plan}}</td>
+                          </tr>
+                          <tr>
+                            <th width="40%">  Total Access  </th>
                             <td width="2%">:</td>
-                            <td>26/04/2022</td>
-                        </tr>
-                        <tr>
-                            <th width="30%">Created Date </th>
+                            <td>{{user.total_access}}</td>
+                          </tr>
+                          <tr>
+                            <th width="40%"> Update Plan Date </th>
                             <td width="2%">:</td>
-                            <td>26/04/2020</td>
-                        </tr>
-=======
-      <div class="row">
-        <div class="col-lg-4">
-            <div class="card shadow-sm">
-              <div class="card-header bg-transparent text-center">
-                <img class="profile_img" src="{{imageurls}}{{user.image}}" alt="student dp">
-                <h3>{{user.name}}</h3>
-              </div>
-              <div class="card-body">
-                <p class="mb-0"><strong class="pr-1">User ID:</strong>{{user.userid}}</p>
-                <p class="mb-0"><strong class="pr-1">Matrimony ID:</strong>{{user.matrimony_id}}</p>
-                <p class="mb-0"><strong class="pr-1">Active Plan:</strong>{{user.active_plan}}</p>
-                <p class="mb-0"><strong class="pr-1">Taken Plan:</strong>{{user.taken_plan}}</p>
-                <p class="mb-0"><strong class="pr-1">Total Access:</strong>{{user.total_access}}</p>
-
-                <p class="mb-0"><strong class="pr-1">Update Plan Date:</strong>{{user.update_plan_date}}</p>
-                <p class="mb-0"><strong class="pr-1">Created Date:</strong>{{user.created_date }}</p>
-
-
->>>>>>> 0c2e6fa8f455f6eb7e9d288b47a966e4010ebeae
-
+                            <td>{{user.update_plan_date}}</td>
+                          </tr>
+                          <tr>
+                            <th width="40%"> Created Date </th>
+                            <td width="2%">:</td>
+                            <td>{{user.created_date}}</td>
+                          </tr>
 
 
                         </table>
-                   
     
-                  </div>
+                       
+        
+                      </div>
+                      </div>
             </div>
         </div>
-        </div>
+    </div>
+
+    <div class="container">
+     
         
 
 
@@ -371,7 +362,6 @@
               </table>
             </div>
           </div>
-            <div style="height: 26px"></div>
           <div class="card shadow-sm">
             <div class="card-header bg-transparent border-0">
               <h3 class="mb-0">Other Information</h3>
@@ -382,12 +372,12 @@
           </div>
         </div>
 
-<<<<<<< HEAD
         
        
       </div>
     </div>
   </div>
+  
 
   
   <div class="container">
@@ -408,8 +398,4 @@
   </div>
 
   
-=======
-      </div>
-    </div>
-  </div>
->>>>>>> 0c2e6fa8f455f6eb7e9d288b47a966e4010ebeae
+    
