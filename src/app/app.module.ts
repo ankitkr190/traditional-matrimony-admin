@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
+import { ProfessionComponent } from './profession/profession.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     LocationComponent,
     LoginComponent,
+    ProfessionComponent,
 
 
   ],

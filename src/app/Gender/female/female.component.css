@@ -5,3 +5,10 @@
 .bx-chevron-right {
   font-size: 10px;
 }
+
+.pagination {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #4f46e5;
+}
