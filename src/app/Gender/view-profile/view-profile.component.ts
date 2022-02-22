@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SuperadminService } from 'src/app/superadmin.service';
 import { Router } from '@angular/router';
 import { ActivatedRouteSnapshot,ActivatedRoute, } from '@angular/router';
+import { map,filter } from 'rxjs';
 @Component({
   selector: 'app-view-profile',
   templateUrl: './view-profile.component.html',
@@ -23,17 +24,19 @@ export class ViewProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.userid)
+
     this.singleProfiledetails();
+
   }
 
   singleProfiledetails(){
-    this.admin.singleprofilefulldetails(this.userid).subscribe(
+    this.admin.profile().pipe(
+      map(res=>res.filter((p:any)=>p.userid==this.userid))
+    ).subscribe(
       (res)=>{
-        console.log(res);
-        this.user=res[0];
+        this.user=res[0]
+
       }
     )
-
   }
 }
