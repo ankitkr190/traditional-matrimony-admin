@@ -31,52 +31,62 @@
             <div class="card-body">
                 <h4 class="mt-0 header-title mb-4"> Location wise users</h4>
                 <div class="table-responsive">
-                    <table class="table table-hover advanced-web-table" id="ordering-table" >
+                    <table class="table table-hover advanced-web-table"
+                    data-toggle="table"
+                    data-search="true"
+                    data-filter-control="true" 
+                    
+                    data-click-to-select="true"
+                    data-toolbar="#toolbar"  >
                         <thead>
                             <tr>
-                                <th scope="col">User Id</th>
+                                <th scope="col" data-field="user_id" data-filter-control="input" >User Id</th>
 
-                                <th scope="col">Matrimony Id</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">City</th>
-                                <th scope="col">State</th>
+                                <th scope="col" data-field="Matrimony_id" data-filter-control="input" >Matrimony Id</th>
+                                <th scope="col" data-field="Name" data-filter-control="input">Name</th>
+                                 <th scope="col" data-field="city" data-filter-control="select">City</th>
+                                <th scope="col" data-field="state" data-filter-control="select">State</th> 
+                                <th scope="col" data-field="gender" data-filter-control="select">Gender</th>
+                                <th  scope="col">Action</th>
 
 
-                                <th scope="col">Block status</th>
-                                <th scope="col">Image</th>
-                                <th scope="col">Action</th>
+
+
+                                
 
                             </tr>
 
                         </thead>
                         <tbody>
-                            <tr *ngFor="let profile of profiles">
+                            <tr>
 
-                                <td>{{profile.userid}}</td>
-                                <td>{{profile.matrimony_id}}</td>
-                                <td>{{profile.name}}</td>
-                                <td>{{profile.city}}</td>
-                                <td>{{profile.state}}</td>
-                                <td><span class="badge badge-success">Active</span></td>
-                                <td>
-                                    <div>
-                                        <img src="{{imageurls}}{{profile.image}}" alt="" class="thumb-md rounded-circle mr-2">
-                                    </div>
-                                </td>
-                                <td>
-                                   <a routerLink="/gender/view-profile/" class="action-btn">
-                                    <i class='bx bx-show'></i>
-                                   </a>
+                                <td>1</td>
+                                <td>1234</td>
+                                <td>Ankit</td>
+                                 <td>Ranchi</td>
+                                <td>Jharkhand</td> 
+                                <td>Male</td>
+                                
+                            </tr>
+                            <tr>
 
-                                   <a href="" class="action-btn">
-                                    <i class='bx bx-block text-danger'></i>
-                                   </a>
-                                    <div>
+                                <td>2</td>
+                                <td>234</td>
+                                <td> Rakesh</td>
+                                <td>Bihar</td>
+                                <td>Patna</td>
+                                <td>Male</td> 
+                               
+                            </tr>
+                            <tr>
 
-
-
-                                    </div>
-                                </td>
+                                <td>3</td>
+                                <td>125</td>
+                                <td>Priya</td>
+                                <td>Hyderabad</td>
+                                <td>Telengana</td> 
+                                <td>Female</td>
+                               
                             </tr>
 
 
