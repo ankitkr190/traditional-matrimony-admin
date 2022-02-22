@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { map, pipe } from 'rxjs';
 import { SuperadminService } from '../superadmin.service';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -16,16 +18,23 @@ export class DashboardComponent implements OnInit {
   }
 
 maleUsercount(){
-  this.admin.lits_of_profile("Male").subscribe(
+  this.admin.profile().pipe(
+    map(res=>res.filter((m:any)=>m.gender=="Male")),
+  )
+  .subscribe(
     (res)=>{
       this.male=res.length;
 
-    }
+    },
+
   )
 }
 
 femaleUsercount(){
-  this.admin.lits_of_profile("Female").subscribe(
+  this.admin.profile().pipe(
+    map(res=>res.filter((f:any)=>f.gender=="Female"))
+  )
+      .subscribe(
     (res)=>{
       this.female=res.length;
 

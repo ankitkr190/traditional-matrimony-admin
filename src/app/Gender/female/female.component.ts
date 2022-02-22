@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SuperadminService } from 'src/app/superadmin.service';
+import { map,filter } from 'rxjs';
 @Component({
   selector: 'app-female',
   templateUrl: './female.component.html',
@@ -19,7 +20,10 @@ export class FemaleComponent implements OnInit {
   }
 
   list(){
-    this.admin.lits_of_profile("Female").subscribe(
+    this.admin.profile().pipe(
+      map(res=>res.filter((f:any)=>f.gender=="Female"))
+    )
+    .subscribe(
       (res)=>{
         this.femalelist=res;
         console.log(res)
