@@ -19,7 +19,7 @@
 </div>
 
 <div class="filter">
-    
+
 <label for="search"><i class='bx bx-filter-alt'></i></label>
 <input class="table-filter" type="search" data-table="advanced-web-table" placeholder="Filter user">
 </div>
@@ -39,7 +39,7 @@
                                 <th scope="col">Matrimony Id</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">City</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">State</th>
 
 
                                 <th scope="col">Block status</th>
@@ -47,27 +47,27 @@
                                 <th scope="col">Action</th>
 
                             </tr>
-                            
+
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr *ngFor="let profile of profiles">
 
-                                <td>1</td>
-                                <td>23</td>
-                                <td>Ankit</td>
-                                <td>Ranchi</td>
-                                <td>Jharkhand</td>
+                                <td>{{profile.userid}}</td>
+                                <td>{{profile.matrimony_id}}</td>
+                                <td>{{profile.name}}</td>
+                                <td>{{profile.city}}</td>
+                                <td>{{profile.state}}</td>
                                 <td><span class="badge badge-success">Active</span></td>
                                 <td>
                                     <div>
-                                        <img src="" alt="" class="thumb-md rounded-circle mr-2">
+                                        <img src="{{imageurls}}{{profile.image}}" alt="" class="thumb-md rounded-circle mr-2">
                                     </div>
                                 </td>
                                 <td>
                                    <a routerLink="/gender/view-profile/" class="action-btn">
                                     <i class='bx bx-show'></i>
                                    </a>
-                                  
+
                                    <a href="" class="action-btn">
                                     <i class='bx bx-block text-danger'></i>
                                    </a>
@@ -78,41 +78,13 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
 
-                                <td>1</td>
-                                <td>23</td>
-                                <td>Rakesh</td>
-                                <td>Patna</td>
-                                <td>Bihar</td>
-                                
-                                <td><span class="badge badge-success">Active</span></td>
-                                <td>
-                                    <div>
-                                        <img src="" alt="" class="thumb-md rounded-circle mr-2">
-                                    </div>
-                                </td>
-                                <td>
-                                   <a routerLink="/gender/view-profile/" class="action-btn">
-                                    <i class='bx bx-show'></i>
-                                   </a>
-                                  
-                                   <a href="" class="action-btn">
-                                    <i class='bx bx-block text-danger'></i>
-                                   </a>
-                                    <div>
-
-
-
-                                    </div>
-                                </td>
-                            </tr>
 
                         </tbody>
                     </table>
                 </div>
             </div>
-            
+
         </div>
 
         <nav aria-label="Page navigation example">
@@ -124,7 +96,7 @@
               <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
           </nav>
-        
+
     </div>
-    
+
 </div>
