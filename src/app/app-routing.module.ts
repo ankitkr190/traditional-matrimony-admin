@@ -1,3 +1,4 @@
+import { ProfessionComponent } from './profession/profession.component';
 import { LoginComponent } from './login/login.component';
 import { LocationComponent } from './location/location.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,6 +12,8 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent},
   {path:"location",component:LocationComponent},
   {path:"login",component:LoginComponent},
+  {path:"profession",component:ProfessionComponent},
+
 
 
 
