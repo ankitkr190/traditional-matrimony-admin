@@ -29,6 +29,7 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                              <th scope="col">S.No</th>
                                 <th scope="col">User Id</th>
 
                                 <th scope="col">Matrimony Id</th>
@@ -40,8 +41,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr  *ngFor="let male of malelist" >
-
+                            <tr  *ngFor="let male of malelist  | paginate: { id: 'foo',
+                                        itemsPerPage:itemsperpage,
+                                        currentPage: currentpage,
+                                        totalItems: malelist.length};let i = index" >
+                                <td class="dtr-control">{{(currentpage - 1) * itemsperpage + i + 1}}</td>
                                 <td>{{male.userid}}</td>
                                 <td>{{male.matrimony_id}}</td>
                                 <td>{{male.name}}</td>
@@ -55,7 +59,7 @@
                                    <a routerLink="/gender/view-profile/{{male.userid}}" class="action-btn">
                                     <i class='bx bx-show'></i>
                                    </a>
-                                  
+
                                    <a href="" class="action-btn">
                                     <i class='bx bx-block text-danger'></i>
                                    </a>
@@ -71,21 +75,25 @@
                     </table>
                 </div>
             </div>
-            
+
         </div>
 
         <nav aria-label="Page navigation example">
-            <ul class="pagination">
+
+          <div class="my-2 text-right">
+            <pagination-controls id="foo" (pageChange)="currentpage = $event"></pagination-controls>
+        </div>
+            <!-- <ul class="pagination">
               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
+            </ul> -->
           </nav>
-        
+
     </div>
-    
+
 </div>
 
 

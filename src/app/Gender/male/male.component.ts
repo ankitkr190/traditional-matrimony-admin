@@ -9,6 +9,8 @@ import { SuperadminService } from 'src/app/superadmin.service';
 export class MaleComponent implements OnInit {
   malelist:any[]=[];
   imageurls:any;
+  currentpage:number=1;
+  itemsperpage:number=5;
   constructor(private admin:SuperadminService) {
     this.imageurls=admin.image_urls
   }
@@ -26,5 +28,6 @@ list(){
     }
   )
 }
+
 
 }

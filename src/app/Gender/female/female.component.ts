@@ -8,6 +8,8 @@ import { SuperadminService } from 'src/app/superadmin.service';
 export class FemaleComponent implements OnInit {
   femalelist:any[]=[];
   imageurls:any;
+  currentpage:number=1;
+  itemsperpage:number=5;
   constructor(private admin:SuperadminService) {
     this.imageurls=admin.image_urls
    }

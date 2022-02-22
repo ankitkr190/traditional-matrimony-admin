@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { GenderRoutingModule } from './gender-routing.module';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
   imports: [
     CommonModule,
     GenderRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ]
 })
 export class GenderModule { }
