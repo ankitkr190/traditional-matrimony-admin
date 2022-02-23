@@ -37,6 +37,7 @@
 
                                 <th scope="col">Matrimony Id</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Phone Number</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Image</th>
                                 <th scope="col">Action</th>
@@ -52,6 +53,7 @@
                                 <td>{{female.userid}}</td>
                                 <td>{{female.matrimony_id}}</td>
                                 <td>{{female.name}}</td>
+                                <td>{{female.phone_number}}</td>
                                 <td><span class="badge badge-success">Active</span></td>
                                 <td>
                                     <div>
@@ -80,7 +82,7 @@
               <div class="my-2 text-right">
                 <pagination-controls id="foo" (pageChange)="currentpage = $event"></pagination-controls>
             </div>
-             
+
             </ul>
           </nav>
 

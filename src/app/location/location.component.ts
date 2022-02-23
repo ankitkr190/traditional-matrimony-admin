@@ -11,7 +11,11 @@ export class LocationComponent implements OnInit {
   }
 
   ngOnInit(): void {
+<<<<<<< HEAD
+    this.admin.profile().subscribe(res=>{this.profiles=res,console.log(res.length)})
+=======
     
+>>>>>>> 3ccbc9212e21360f8dc8989fd6aefdbeb48516d5
   }
 
 }

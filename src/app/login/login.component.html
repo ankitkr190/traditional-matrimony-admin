@@ -8,23 +8,23 @@
           <h6 class="description">
             Please enter your details.
           </h6>
-        <form class="form">
+        <form  class="form" [formGroup]="loginForm" (ngSubmit)="onsubmit()">
 
             <span class="input_heading">Email</span>
-            <input class="form__input" type="email" name="email" formControlName="email" placeholder="Enter Email">
+            <input class="form__input" type="text"  formControlName="username" placeholder="Enter Username">
             <!-- <div  class="alert alert-danger">
               <div *ngIf="loginForm.controls['name'].errors.required">
               Name is required.
             </div>
           </div> -->
             <span class="input_heading">Password</span>
-            <input class="form__input" type="password" type="password" name="password" formControlName="password" placeholder="Enter Password">
+            <input class="form__input" type="password" formControlName="password" placeholder="Enter Password">
             <div>
             <a class="form__link">Forgot your password?</a>
 
             </div>
             <input type="submit" value="SIGN IN"  class="btn"/>
-            
+
 
         </form>
         
@@ -34,3 +34,7 @@
 
     </div>
 
+<<<<<<< HEAD
+</body>
+=======
+>>>>>>> 3ccbc9212e21360f8dc8989fd6aefdbeb48516d5
