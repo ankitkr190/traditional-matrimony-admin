@@ -13,7 +13,7 @@ export class LocationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.admin.profile().subscribe(res=>this.profiles=res)
+    this.admin.profile().subscribe(res=>{this.profiles=res,console.log(res.length)})
   }
 
 }

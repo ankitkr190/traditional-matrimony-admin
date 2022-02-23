@@ -18,4 +18,7 @@ export class SuperadminService {
     return this.http.get<any>(this.urls+"admin/profile",{"headers":this.headers})
 
   }
+  adminlogin(data:any):Observable<any>{
+    return this.http.post<any>(this.urls+"admin/auth/login",data)
+  }
 }
