@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { SuperadminService } from '../superadmin.service';
 @Component({
   selector: 'app-location',
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.css']
 })
 export class LocationComponent implements OnInit {
-  profiles:any[]=[];
-  imageurls:any;
-  constructor(private admin:SuperadminService) {
-    this.imageurls=this.admin.image_urls
+ 
+  constructor() {
+   
   }
 
   ngOnInit(): void {
+<<<<<<< HEAD
     this.admin.profile().subscribe(res=>{this.profiles=res,console.log(res.length)})
+=======
+    
+>>>>>>> 3ccbc9212e21360f8dc8989fd6aefdbeb48516d5
   }
 
 }
