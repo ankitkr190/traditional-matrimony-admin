@@ -203,7 +203,3 @@ setTimeout(function () {
 })(document);
 
 // table search filter ended
-
-$(function () {
-  $("#table").bootstrapTable();
-});

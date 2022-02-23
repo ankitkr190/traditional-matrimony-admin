@@ -2,111 +2,125 @@
     <div class="page-title-box">
         <div class="row align-items-center">
             <div class="col-sm-6">
-                <h4 class="page-title">Location wise User</h4>
+                <h4 class="page-title">Location Category</h4>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-right">
                     <li><a routerLink="/dashboard">Dashboard</a></li>
+
+                    
                     <li><i class='bx bx-chevron-right'></i></li>
-
-                    <li class="breadcrumb-item">
-                       Location</li>
-
+                    <li class="breadcrumb-item">Location</li>
                 </ol>
             </div>
         </div>
         </div>
 </div>
 
-<div class="filter">
-
-<label for="search"><i class='bx bx-filter-alt'></i></label>
-<input class="table-filter" type="search" data-table="advanced-web-table" placeholder="Filter user">
-</div>
-
-
-<div class="row">
-    <div class="col-xl-12">
-        <div class="card m-b-30 m-t-30">
-            <div class="card-body">
-                <h4 class="mt-0 header-title mb-4"> Location wise users</h4>
-                <div class="table-responsive">
-                    <table class="table table-hover advanced-web-table"
-                    data-toggle="table"
-                    data-search="true"
-                    data-filter-control="true" 
-                    
-                    data-click-to-select="true"
-                    data-toolbar="#toolbar"  >
-                        <thead>
-                            <tr>
-                                <th scope="col" data-field="user_id" data-filter-control="input" >User Id</th>
-
-                                <th scope="col" data-field="Matrimony_id" data-filter-control="input" >Matrimony Id</th>
-                                <th scope="col" data-field="Name" data-filter-control="input">Name</th>
-                                 <th scope="col" data-field="city" data-filter-control="select">City</th>
-                                <th scope="col" data-field="state" data-filter-control="select">State</th> 
-                                <th scope="col" data-field="gender" data-filter-control="select">Gender</th>
-                                <th  scope="col">Action</th>
 
 
 
+   
+    
+        
+            
+                <form class="row">
+                    <select class="form-control col-md-2">
+                       <option>Select State</option> 
+                       <option>Option 1</option> 
+                       <option>Option 2</option> 
+                       <option>Option 3</option> 
+                       <option>Option 4</option> 
+                       <option>Option 5</option> 
+                    </select>
+                    <select class="form-control col-md-2">
+                        <option>Select District</option> 
+                        <option>All </option> 
+                        <option>Option 1</option> 
+                        <option>Option 2</option> 
+                        <option>Option 3</option> 
+                        <option>Option 4</option> 
+                        <option>Option 5</option> 
+                     </select>
+                    <select class="form-control col-md-2">
+                        <option>Select Gender</option> 
+                        <option>All</option>
+                        <option>Male</option> 
+                        <option>Female</option> 
+                        
+                     </select>
 
-                                
-
-                            </tr>
-
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td>1</td>
-                                <td>1234</td>
-                                <td>Ankit</td>
-                                 <td>Ranchi</td>
-                                <td>Jharkhand</td> 
-                                <td>Male</td>
-                                
-                            </tr>
-                            <tr>
-
-                                <td>2</td>
-                                <td>234</td>
-                                <td> Rakesh</td>
-                                <td>Bihar</td>
-                                <td>Patna</td>
-                                <td>Male</td> 
-                               
-                            </tr>
-                            <tr>
-
-                                <td>3</td>
-                                <td>125</td>
-                                <td>Priya</td>
-                                <td>Hyderabad</td>
-                                <td>Telengana</td> 
-                                <td>Female</td>
-                               
-                            </tr>
+                    <button class="btn btn-primary col-md-2 ">Search</button>
+                </form>
+            
+              
+   
 
 
-                        </tbody>
-                    </table>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card m-b-30 m-t-30">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title mb-4"> 27 Users found</h4>
+                    <div class="table-responsive ">
+                        <table class="table table-hover advanced-web-table">
+                            <thead>
+                                <tr>
+                                  <th scope="col">S.No</th>
+                                    <th scope="col">User Id</th>
+    
+                                    <th scope="col">Matrimony Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Action</th>
+    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>
+                                        <div>
+                                            <img src="" alt="" class="thumb-md rounded-circle mr-2">
+                                        </div>
+                                    </td>
+                                    <td>
+                                       <a routerLink="/gender/view-profile/" class="action-btn">
+                                        <i class='bx bx-show'></i>
+                                       </a>
+    
+                                       <a href="" class="action-btn">
+                                        <i class='bx bx-block text-danger'></i>
+                                       </a>
+                                        <div>
+    
+    
+    
+                                        </div>
+                                    </td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+    
             </div>
-
+    
+            <nav aria-label="Page navigation example">
+    
+              <div class="my-2 text-right">
+                <!-- <pagination-controls></pagination-controls> -->
+            </div>
+               
+              </nav>
+    
         </div>
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
-
+    
     </div>
-
-</div>
+    
