@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  user-select: none;
-}
-
-/* Generic */
-
 .container {
   display: flex;
   justify-content: center;
@@ -44,12 +33,16 @@
   padding-left: 25px;
   font-size: 13px;
   letter-spacing: 0.15px;
-  border: 2px solid #e4e7eb;
+  border: 1px solid #e4e7eb;
   outline: none;
 
   background-color: #ffffff;
   transition: 0.25s ease;
   border-radius: 8px;
+}
+
+.form__input:focus {
+  border: 1px solid #4f46e5;
 }
 
 .title {
@@ -86,6 +79,9 @@
 }
 
 .btn:hover {
+  background-color: #eeeeee;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
 }
 
 .form__link {

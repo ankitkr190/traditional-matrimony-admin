@@ -7,6 +7,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
 import { ProfessionComponent } from './profession/profession.component';
+import { CasteComponent } from './caste/caste.component';
+import { EducationComponent } from './education/education.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
+import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
+import { VerifiedComponent } from './verified/verified.component';
+import { UnverifiedComponent } from './unverified/unverified.component';
 
 
 @NgModule({
@@ -16,6 +22,12 @@ import { ProfessionComponent } from './profession/profession.component';
     LocationComponent,
     LoginComponent,
     ProfessionComponent,
+    CasteComponent,
+    EducationComponent,
+    SubscribeComponent,
+    UnsubscribeComponent,
+    VerifiedComponent,
+    UnverifiedComponent,
 
 
   ],

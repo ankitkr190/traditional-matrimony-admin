@@ -35,7 +35,7 @@ setTimeout(function () {
       }),
       (MainApp.prototype.initLeftMenuCollapse = function () {
         // Left menu collapse
-        $(".button-menu-mobile").on("click", function (event) {
+        $(".open-left").on("click", function (event) {
           event.preventDefault();
           $("body").toggleClass("enlarged");
         });
