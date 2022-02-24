@@ -17,6 +17,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
 import { VerifiedComponent } from './verified/verified.component';
 import { UnverifiedComponent } from './unverified/unverified.component';
+import { AddProfileComponent } from './add-profile/add-profile.component';
 
 
 
@@ -33,6 +34,7 @@ import { UnverifiedComponent } from './unverified/unverified.component';
     UnsubscribeComponent,
     VerifiedComponent,
     UnverifiedComponent,
+    AddProfileComponent,
 
 
   ],

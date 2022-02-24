@@ -1,3 +1,4 @@
+import { AddProfileComponent } from './add-profile/add-profile.component';
 import { UnverifiedComponent } from './unverified/unverified.component';
 import { VerifiedComponent } from './verified/verified.component';
 import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
@@ -25,6 +26,8 @@ const routes: Routes = [
   {path:"unsubscribe",component:UnsubscribeComponent},
   {path:"verified",component:VerifiedComponent},
   {path:"unverified",component:UnverifiedComponent},
+  {path:"add-profile",component:AddProfileComponent},
+
 
 
 
