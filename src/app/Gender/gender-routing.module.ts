@@ -1,3 +1,4 @@
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { FemaleComponent } from './female/female.component';
 import { MaleComponent } from './male/male.component';
@@ -7,7 +8,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path:"male",component:MaleComponent},
   {path:"female",component:FemaleComponent},
-  {path:"view-profile/:id",component:ViewProfileComponent}
+  {path:"view-profile/:id",component:ViewProfileComponent},
+  {path:"edit-profile/:id",component:EditProfileComponent}
+
 
 
 ];

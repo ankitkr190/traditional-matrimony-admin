@@ -18,6 +18,7 @@ import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
 import { VerifiedComponent } from './verified/verified.component';
 import { UnverifiedComponent } from './unverified/unverified.component';
 import { AddProfileComponent } from './add-profile/add-profile.component';
+import { EditProfileComponent } from './Gender/edit-profile/edit-profile.component';
 
 
 
@@ -35,6 +36,7 @@ import { AddProfileComponent } from './add-profile/add-profile.component';
     VerifiedComponent,
     UnverifiedComponent,
     AddProfileComponent,
+    EditProfileComponent,
 
 
   ],

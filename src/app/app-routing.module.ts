@@ -1,3 +1,4 @@
+import { EditProfileComponent } from './Gender/edit-profile/edit-profile.component';
 import { AddProfileComponent } from './add-profile/add-profile.component';
 import { UnverifiedComponent } from './unverified/unverified.component';
 import { VerifiedComponent } from './verified/verified.component';
@@ -27,6 +28,9 @@ const routes: Routes = [
   {path:"verified",component:VerifiedComponent},
   {path:"unverified",component:UnverifiedComponent},
   {path:"add-profile",component:AddProfileComponent},
+  {path:"edit-profile",component:EditProfileComponent},
+
+
 
 
 
